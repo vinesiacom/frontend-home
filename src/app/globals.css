@@ -1,0 +1,493 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* @font-face {
+  font-family: "Canela";
+  src: url("../assets/fonts/Canela/Canela-Regular.otf")
+    format("opentype");
+  font-weight: 400, 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Canela";
+  src: url("../assets/fonts/Canela/Canela-Light.otf") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+} */
+
+@font-face {
+  font-family: "Canela";
+  src: url("../assets/fonts/Canela Web/Canela-Regular-Web.woff") format("font-woff");
+  font-weight: 400; /* 400 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Canela";
+  src: url("../assets/fonts/Canela Web/Canela-Light-Web.woff") format("font-woff"),
+    url("../assets/fonts/Canela Web/Canela-Light-Web.woff2") format("font-woff");
+  font-style: normal;
+}
+
+/*  */
+@font-face {
+  font-family: "Bon Vivant";
+  src: url("../assets/fonts/BonVivant-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  font-family: albert, "sans-serif";
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Canela";
+}
+/* webkit class */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+body::-webkit-scrollbar {width:10px}
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bf4d20;
+  border-radius: 10px;
+}
+/* end webkit */
+.collection {
+  font-family: "Bon Vivant";
+}
+.custom-bg-image {
+  background-image: url("../assets/images/herobanner.png");
+  height: 818px;
+  background-size: cover;
+  /* background-position: center; */
+}
+.custom-limited-bg-image {
+  background-image: url("../assets/images/limitedBG.png");
+  height: 818px;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+/* about banner */
+.aboutus-bg-image {
+  background-image: url("../assets/images/aboutus.png");
+  height: 818px;
+  background-size: cover;
+  /* background-position: center; */
+}
+/* winery page */
+.winery-bg-image {
+  background-image: url("../assets/images/winerybanner.png");
+  height: 818px;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+/* signUp-page */
+.customsign-bg-image {
+  background-image: none;
+
+  background-size: cover;
+  /* background-position: center; */
+}
+
+/* contacts start*/
+.contact-bg-image {
+  background-image: url("../assets/images/contactus.png");
+  height: 448px;
+  background-size: cover;
+}
+.flx-calender-style {
+  background-color: #f3e8cf !important;
+  width: 100% !important;
+  border: 1px solid rgba(191, 77, 32, 0.2) !important;
+  border-radius: 8px !important ;
+  color: #cb220d !important;
+}
+.flx-calender-style .react-calendar__navigation {
+  border-bottom: 1px solid rgba(191, 77, 32, 0.2) !important;
+}
+.flx-calender-style .react-calendar__tile--active {
+  background: #cb220d !important;
+  color: white;
+  border-radius: 100% !important;
+  flex-basis: auto !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+.flx-calender-style .react-calendar__tile--now {
+  background: #cb220d;
+  color: white;
+  width: 40px !important;
+  height: 40px !important;
+  flex-basis: auto !important;
+  border-radius: 100% !important;
+}
+.flx-calender-style .react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: #cb220d;
+  color: white;
+}
+/* contact end */
+
+/* vinesia banner */
+.vinesia-bg-image {
+  background-image: url("../assets/images/vinesiabanner.png");
+  height: 818px;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+.card_bg_shape {
+  background-image: url("../assets/images/shape.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card_shape_slider {
+  background-image: url("../assets/images/shape.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.newsletter_banner {
+  background-image: url("../assets/images/subscription_bg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slick-arrow {
+  z-index: 10;
+}
+
+.slick-next:before {
+  content: none;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: " ";
+  display: none;
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: rgb(122, 119, 119);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* PRODUCTSOVERVIEW STYLE */
+.slick-dots li {
+  width: 80px !important;
+  height: 80px !important;
+  padding: 0px !important;
+  bottom: 0px !important;
+}
+
+.slick-dots {
+  position: relative !important;
+  bottom: -51px !important;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* Animation class */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(100deg);
+  }
+}
+
+/* .mobile_view_slider{} */
+
+/* .slick-arrow {
+  margin-top: 16px;
+} */
+@media screen and (min-width: 768px) {
+  .invest_carousel .slick-next,
+  .invest_carousel .slick-prev {
+    position: absolute;
+    width: 64px;
+    height: 48px;
+  }
+  .invest_carousel .slick-next {
+    right: -60px;
+  }
+  .invest_carousel .slick-prev {
+    left: -60px;
+  }
+
+  .customsign-bg-image {
+    background-image: url("../assets/images/signup.png");
+
+    background-size: cover;
+    /* background-position: center; */
+  }
+}
+@media screen and (min-width: 1040px) {
+  .invest_carousel .slick-next,
+  .invest_carousel .slick-prev {
+    position: absolute;
+    width: 64px;
+    height: 48px;
+  }
+  .invest_carousel .slick-next {
+    right: -96px;
+  }
+  .invest_carousel .slick-prev {
+    left: -96px;
+  }
+}
+
+.critics_carousel .slick-next,
+.critics_carousel .slick-prev {
+  position: absolute;
+  width: 64px;
+  height: 48px;
+}
+/* Styles for buttons at large screens */
+@media screen and (max-width: 768px) {
+  /* .product_slider ul {
+    display: flex !important;
+    justify-content: center;
+    width: 360px;
+    margin-left: 52px;
+    height: 91px;
+    padding: 10px 0px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 0;
+  } */
+
+  .custom-bg-image {
+    background-image: url("../assets/images/Mobile-banner.webp");
+    height: 1000px;
+    background-size: cover;
+    /* background-position: center; */
+  }
+  .custom-limited-bg-image {
+    background-image: url("../assets/images/limitedMobile.png");
+    height: 1000px;
+    background-size: cover;
+    /* background-position: center; */
+  }
+  /* w&art collection */
+  .custom-collection-bg-image {
+    background-image: url("../assets/images/collection.png");
+    height: 1000px;
+    background-size: cover;
+  }
+  .invest_carousel .slick-prev,
+  .invest_carousel .slick-next {
+    position: absolute;
+    width: 64px;
+    height: 48px;
+    top: 105%;
+  }
+
+  .invest_carousel .slick-next {
+    right: 95px;
+  }
+  .invest_carousel .slick-prev {
+    left: 95px;
+  }
+}
+
+.critics_carousel .slick-next {
+  right: 16px;
+}
+.critics_carousel .slick-prev {
+  left: 16px;
+}
+.subcribe_soon_slider {
+  position: relative !important;
+}
+.subcribe_soon_slider .slick-active {
+  background-color: white !important;
+}
+.subcribe_soon_slider .slick-dots li {
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+.subcribe_soon_slider .slick-dots {
+  bottom: 38px !important;
+  height: 7px !important;
+  position: absolute !important;
+}
+
+/* Custom CheckBox */
+.custom_checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.custom_checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #eee;
+  border-radius: 6px;
+  border: 1px solid #2f222b;
+}
+
+/* On mouse-over, add a grey background color */
+.custom_checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom_checkbox input:checked ~ .checkmark {
+  background-color: black;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.custom_checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom_checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom_checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Range Slider CSS */
+
+.horizontal-slider {
+  height: 50px;
+}
+
+.horizontal-slider .example-track {
+  top: 15px;
+  height: 6px;
+  border-radius: 20px;
+}
+
+.example-track.example-track-0 {
+  background: #bf4d2010;
+}
+
+.example-track.example-track-1 {
+  background: #bf4d20;
+}
+
+.example-track.example-track-2 {
+  background: #bf4d2010;
+}
+
+.horizontal-slider .example-thumb {
+  top: 1px;
+  width: 50px;
+  height: 48px;
+  line-height: 38px;
+  border-radius: 50%;
+  font-size: 0.9em;
+  text-align: center;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 5px solid gray;
+  box-sizing: border-box;
+}
+
+/*  Range Slider CSS END */
+
+.scroll_rotate {
+  animation: scrollRotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes scrollRotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .invest_carousel */
+/* }  */
+
+/* Styles for buttons at medium screens */
+@media screen and (max-width: 768px) {
+  .productcarousel {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .custom-bg-image .custom-limited-bg-image .custom-collection-bg-image {
+    height: 1000px;
+  }
+}
